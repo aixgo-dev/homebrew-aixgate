@@ -11,7 +11,7 @@ class Aixgate < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aixgo-dev/aixgate/releases/download/v0.1.0/aixgate_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "326c7efb983fb139d7954af87ff9a6b99ebb0af05d85749924a5c7158440f3c5"
+      sha256 "db6860aa047f13c242fd361636f3dda37b4ec2a29fbf068fcfdb015e7afaf6f1"
 
       define_method(:install) do
         bin.install "aixgate"
@@ -19,7 +19,7 @@ class Aixgate < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/aixgo-dev/aixgate/releases/download/v0.1.0/aixgate_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "e75adf50af7e4b37e2249cad5583399dad4beb0569d347aacf137decb3b9cd5e"
+      sha256 "5f3e6de0618def9b85b5d8595e166803958f419c6a69611b0815208584320b2d"
 
       define_method(:install) do
         bin.install "aixgate"
@@ -30,14 +30,14 @@ class Aixgate < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/aixgo-dev/aixgate/releases/download/v0.1.0/aixgate_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "ea2a63e76fd1bebd5ee64f40b5b13bba28330fb21a5f7a50b6ae90a9d86dcbd7"
+      sha256 "156697c569d5e21b14fef8b676d012b43f3cf3b1c99fb7bb2b8e00df5bdb41fd"
       define_method(:install) do
         bin.install "aixgate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aixgo-dev/aixgate/releases/download/v0.1.0/aixgate_0.1.0_Linux_arm64.tar.gz"
-      sha256 "7ec5a5dc3bedc11afd330e12ddcc8e5171a3202d7dbfacbbeb477075bb94605f"
+      sha256 "10f6020b032822a87416549cf16b17ee1c3579ece074f321e0f9c40e49bde56d"
       define_method(:install) do
         bin.install "aixgate"
       end
